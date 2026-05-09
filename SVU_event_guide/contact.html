@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="assets/img/syrianvirtualuniversity_logo.jpg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    
+</head>
+
+<body>
+    <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark myheader">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/syrianvirtualuniversity_logo.jpg" class="header-logo" alt="SVU Logo">
+                فعاليات الجامعة الافتراضية السورية
+            </a>	
+
+            <button type = "button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" >Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html" >Events</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="about.html" >About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html" >Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container my-5">
+    <h1 class="text-center mb-3">اتصل بنا</h1>
+    <p class ="text-center text-muted mb-5"> للاستفسار والاقتراحات</p>
+
+    <div class="row">
+        <!-- contact column -->
+         <div class="col-md-7">
+            <div class="card shadow-sm">
+                <div class="card-body p-4 mybroder">
+                    <h4 class="card-title  text-center">تواصل معنا</h4>
+
+                        <!-- Alert Container for messages -->
+                        <div id="alertMessage"></div>
+
+                        <!-- Name Field -->
+
+                        <form id="contactForm">
+                            <div class="text-end">
+                                <label for="name" class="form-label "> الاسم الكامل</label>
+                                <input type="text" class="form-control text-end mb-3" id="name" placeholder="ادخل الاسم">
+                                <div class="invalid-feedback" id="nameError"> يجب ادخال لاسم</div>
+
+                                <!-- email filed-->
+                                 <div class="mb-3">
+                                    <label for="email" class="form-label"> ادخل البريد الالكتروني</label>
+                                    <input type="email" class="form-control mb-1" id="email" placeholder="example@email.com">
+                                    <div class="invalid-feedback" id="emailError">يجب ادخال البريد الالكتروني</div>
+                                 </div>
+
+                                    <!-- subject options-->
+                                    <div class="mb-3">
+                                        <label for="subject" class=" form-label">الموضوع</label>
+                                        <select class ="form-select" dir="rtl" id="subject">
+                                            <option value="" disabled selected>اختر الموضوع</option>
+                                            <option value="general">استفسار عام</option>
+                                            <option value="suggestion">اقتراح</option>
+                                            <option value="complaint">شكوى</option>
+                                            <option value="registerEvent">تسجيل فعالية</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="subjectError">الرجاء اختيار الموضوع</div>
+                                    </div>
+
+                                    <!-- Message Field -->
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">الرسالة</label>
+                                    <textarea class="form-control text-end" id="message" rows="5" placeholder="اكتب رسالتك هنا..."></textarea>
+                                    <div class="invalid-feedback" id="messageError">الرجاء كتابة الرسالة</div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-primary w-100 py-2">إرسال الرسالة</button>
+                            </div>
+                        </form>
+
+                     </div>
+                 </div>
+            </div>
+            <!-- contact info column -->
+             <div class="col-md-5 mt-4 mt-md-0">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body p-4 mybroder">
+                        <h4 class ="card-title mb-4 text-center">معلومات الاتصال</h4>
+
+                        <div class ="text-center mb-4">
+                            <img  class="location-icon" src="assets/img/location icon.png" alt="location_icon">
+                            
+                            <p class="mt-2"><strong>العنوان</strong><br>دمشق-سورية</p>
+                        </div>
+
+                        <div class="text-center mb-4">
+                            <img src="assets/img/email icon1.png" alt="email_icon" class = "email-icon">
+                            <p class="mt-2"><strong>البريد الإلكتروني</strong><br>info@svuonline.org</p>
+                        </div>
+
+                         <div class="text-center mb-4">
+                            <img src="assets/img/telepgone icon.png" alt="telephone_icon" class="telephone-icon">
+                            <p class="mt-2"><strong>الهاتف</strong><br>+963 11 123 4567</p>
+                        </div>
+
+                        <hr>
+
+                        <div class="text-center">
+                            <h5>ساعات العمل</h5>
+                            <p class="mb-0">الأحد - الخميس: 9:00 - 17:00</p>
+                            <p>الجمعة والسبت: مغلق</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="myfooter text-white p-3">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <!-- left side copyright claim -->
+            <div>
+                <p class="mb-0">© All right belong to <a class="me-1" href="https://svuonline.org/" target="_blank">SVU</a> | Your Name + ID</p>
+            </div>
+            
+            <!-- right side social media -->
+            <div class="social-image">
+                <a href="https://www.facebook.com/svuonline.org" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/SVU_Syria" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/X.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/syrian_virtual_university" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/instagram.jpg" alt="Instagram">
+                </a>
+                <a href="https://sy.linkedin.com/school/syrianvirtualuniversity/" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/channel/UCJwPgp0tOp1ZqkzbmDvFSaw" class="text-white" target="_blank">
+                    <img class="social-icons" src="assets/img/youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <!-- Bootstrap JS (required for navbar, slider, modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- my custom JS (will add code here) -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

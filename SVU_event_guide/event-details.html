@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVU Events - كل الفعاليات</title>
+    <link rel="icon" href="assets/img/syrianvirtualuniversity_logo.jpg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    
+</head>
+
+
+
+<body>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark myheader">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/syrianvirtualuniversity_logo.jpg" class="header-logo" alt="SVU Logo">
+                فعاليات الجامعة الافتراضية السورية
+            </a>	
+
+            <button type = "button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" >Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html" >Events</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="about.html" >About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" >Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+        <div class="container my-5">
+
+        <h2 id="eventTitle"></h2>
+
+        <img id="eventImage" class="img-fluid rounded shadow" style="max-height:500px;width:100%;object-fit:cover;">
+
+        <p class="mt-4 fs-5" dir="rtl" id="eventDesc"></p>
+
+        <p>
+            <strong>التاريخ:</strong>
+            <span id="eventDate"></span>
+        </p>
+
+        <p>
+            <strong>المكان:</strong>
+            <span id="eventPlace"></span>
+        </p>
+
+        <button class="btn btn-success">
+أضف للتقويم
+</button>
+
+        <button class="btn btn-primary">
+مشاركة
+</button>
+
+    </div>
+
+</main>
+
+<!-- Team names and IDs -->
+<div class="container my-5">
+    <div class="alert alert-secondary text-center">
+        <h4 class="alert-heading">أعضاء الفريق</h4>
+        <hr>
+        <p class="mb-0"><strong>الاسم:</strong> abdulrahman | <strong>ID:</strong> 239009</p>
+        <p><strong>الاسم:</strong> ahmed | <strong>ID:</strong> 207887</p>
+        <p><strong>الاسم:</strong> evan | <strong>ID:</strong> 295039</p>
+        <p><strong>الاسم:</strong> aya | <strong>ID:</strong> 324688</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="myfooter text-white p-3">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <!-- left side copyright claim -->
+            <div>
+                <p class="mb-0">Copyright © 2011-2012, SVU All rights reserved. <a class="me-1" href="https://svuonline.org/" target="_blank">SVU</a></p>
+            </div>
+            
+            <!-- right side social media -->
+            <div class="social-image">
+                <a href="https://www.facebook.com/svuonline.org" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/SVU_Syria" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/X.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/syrian_virtual_university" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/instagram.jpg" alt="Instagram">
+                </a>
+                <a href="https://sy.linkedin.com/school/syrianvirtualuniversity/" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/channel/UCJwPgp0tOp1ZqkzbmDvFSaw" class="text-white" target="_blank">
+                    <img class="social-icons" src="assets/img/youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+        const eventsData = {
+
+            1: {
+                title: "معرض الكتاب الجامعي",
+                image:"assets/img/معرض الكتاب الجامعي.jpg",
+                desc: "يعد معرض الكتاب الجامعي السنوي الحدث الثقافي الأبرز الذي تنظمه الجامعة الافتراضية السورية، حيث يلتقي العلم بالأدب تحت سقف واحد يهدف والمعرض إلى نشر ثقافة القراءة وتسهيل وصول الطلاب والباحثين إلى أحدث الإصدارات العلمية والأدبية بأسعار مدعومة.",
+                date: "📅 15-20 أبريل 2026",
+                place: "دمشق"
+            },
+
+            2: {
+                title: "ماراثون الجامعة السنوي",
+                image: "assets/img/مارثون جامعي.jpg",
+                desc: "يُعد ماراثون الجامعة السنوي أضخم تظاهرة رياضية تجمع طلاب وأساتذة وموظفي الجامعة الافتراضية السورية في يوم مليء بالطاقة والنشاط. لا يقتصر هذا السباق على المنافسة الرياضية فحسب، بل هو احتفالية مجتمعية تهدف إلى تعزيز الروابط بين أفراد الأسرة الجامعية، والتشجيع على تبني نمط حياة صحي ومتوازن بعيداً عن ضغوط الدراسة والعمل الرقمي.",
+                date: "📅 22 أبريل 2026",
+                place: "حلب"
+            },
+
+            3: {
+                title: "أمسية موسيقية مع أوركسترا الجامعة.",
+                image: "assets/img/حفلة موسقى جامعية.jpg",
+                desc: "تتشرف الجامعة الافتراضية السورية بدعوتكم لحضور الحدث الفني الأرقى لهذا العام؛ أمسية الموسيقى الكلاسيكية التي تحييها أوركسترا الجامعة المكونة من نخبة من الطلاب الموهوبين والأساتذة المبدعين. تأتي هذه الأمسية لتكون جسراً يربط بين الصرح الأكاديمي وعوالم الفن الساحرة، حيث تلتقي الدقة العلمية برهافة الحس الموسيقي.",
+                date: "📅 25 أبريل 2026",
+                place: "حمص"
+            },
+
+            4: {
+                title: "يوم العائلة المفتوح",
+                image: "assets/img/زيارة العائلات للجامعة.jpg",
+                desc: "تستعد الجامعة الافتراضية السورية لإطلاق فعاليتها السنوية المميزة يوم العائلة المفتوح وهي دعوة عامة لجميع طلابنا ليكونوا بصحبة عائلاتهم في رحاب الحرم الجامعي. نهدف من خلال هذا اليوم إلى خلق بيئة تفاعلية تجمع بين الأهل والبيئة التعليمية، ليشاركونا فخرنا بالصرح الذي يصنع مستقبل أبنائهم.",
+                date: "📅 28 أبريل 2026",
+                place: "دمشق"
+            },
+            5: {
+                title: "حفلة تخرج",
+                image: "assets/img/حفل تخرج 2026.jpg",
+                desc: "تستعد الجامعة الافتراضية السورية لإطلاق فعاليتها السنوية المميزة يوم العائلة المفتوح، وهي دعوة عامة لجميع طلابنا ليكونوا بصحبة عائلاتهم في رحاب الحرم الجامعي. نهدف من خلال هذا اليوم إلى خلق بيئة تفاعلية تجمع بين الأهل والبيئة التعليمية، ليشاركونا فخرنا بالصرح الذي يصنع مستقبل أبنائهم.",
+                date: "📅 30 أبريل 2026",
+                place: "دمشق"
+            },
+            6: {
+                title: "ورشات العمل والتعلم مدى الحياة",
+                image: "assets/img/ورشات العمل والتعلم مدى الحياة.jpg",
+                desc: "يفتح مركز التعلم مدى الحياة في الجامعة الافتراضية السورية أبوابه من جديد لإطلاق سلسلة من ورشات العمل التفاعلية والمكثفة. تهدف هذه الفعالية إلى ردم الفجوة بين التعليم الأكاديمي المتوارث ومتطلبات سوق العمل العالمي المتسارع، من خلال تزويد الطلاب والخريجين بالمهارات التقنية والشخصية الأكثر طلباً في الوقت الحالي.",
+                date: "📅 2-5 مايو 2026",
+                place: "دمشق"
+            },
+            7: {
+                title: "فعاليات استقبال الطلاب الجدد",
+                image: "assets/img/صورة باستقبال الطلاب الجدد.jpg",
+                desc: "تستعد الجامعة الافتراضية السورية لاستقبال دفعتها الجديدة من المبدعين والمتميزين في فعالية يوم الاستقبال السنوية. ندرك أن البدايات دائماً ما تكون محملة بالحماس والتساؤلات، لذا صممنا هذا اليوم ليكون دليلك الشامل وخارطة طريقك لتجربة جامعية غنية وناجحة، ولنثبت لك أنك لست مجرد رقم خلف شاشة، بل أنت جزء أساسي من أسرتنا الكبيرة.",
+                date: "📅 10-12 سبتمبر 2026",
+                place: "دمشق"
+            },
+            8: {
+                title: "معرض التوظيف الافتراضي",
+                image: "assets/img/صورة مقابلات وتوظيف.jpg",
+                desc: "تستعد الجامعة لإطلاق معرض التوظيف السنوي الذي يجمع كبرى الشركات المحلية والدولية مع طلابنا المتميزين. يهدف المعرض إلى توفير منصة تفاعلية تتيح للطلاب التقديم على الوظائف الشاغرة والحصول على فرص تدريبية في مختلف المجالات التقنية والإدارية. تواصل مباشرة مع مدراء الموارد البشرية واعرض مهاراتك لتكون جزءا من الشركات الرائدة في المنطقة.",
+                date: "📅 15-17 مايو 2026",
+                place: "دمشق"
+            },
+            9: {
+                title: "الهاكاثون والمسابقات",
+                image: "assets/img/ممسابقات برمجية.jpg",
+                desc: "أكبر تجمع للمبرمجين والمطورين في الجامعة لخوض غمار المنافسة في حل المشكلات التقنية المعقدة وبناء مشاريع برمجية من الصفر في وقت قياسي تهدف المسابقة إلى اكتشاف المواهب البرمجية المتميزة وتعزيز الابتكار.",
+                date: "📅 5-7 يونيو 2026",
+                place: "دمشق"
+            },
+            10: {
+                title: "المؤتمر العلمي الافتراضي",
+                image: "assets/img/مؤتمر علمي.jpg",
+                desc: "حدث أكاديمي رفيع المستوى يستعرض أحدث الأبحاث والدراسات العلمية التي قدمها طلاب وأساتذة الجامعة يتضمن المؤتمر جلسات نقاشية وورشات تخصصية تهدف إلى تطوير مهارات البحث العلمي وتسليط الضوء على الابتكار.,",
+                date: "📅 20-22 يونيو 2026",
+                place: "دمشق"
+            },
+
+        };
+
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        const id = params.get("id");
+
+
+        if (eventsData[id]) {
+
+            document.getElementById("eventTitle").innerText =
+                eventsData[id].title;
+
+            document.getElementById("eventImage").src =
+                eventsData[id].image;
+
+            document.getElementById("eventDesc").innerText =
+                eventsData[id].desc;
+
+            document.getElementById("eventDate").innerText =
+                eventsData[id].date;
+
+            document.getElementById("eventPlace").innerText =
+                eventsData[id].place;
+
+        } else {
+
+            document.getElementById("eventTitle").innerText =
+                "الفعالية غير موجودة";
+
+        }
+    </script>
+
+</body>
+</html>

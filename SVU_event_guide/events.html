@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVU Events - كل الفعاليات</title>
+    <link rel="icon" href="assets/img/syrianvirtualuniversity_logo.jpg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    
+</head>
+
+<body>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark myheader">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/syrianvirtualuniversity_logo.jpg" class="header-logo" alt="SVU Logo">
+                فعاليات الجامعة الافتراضية السورية
+            </a>	
+
+            <button type = "button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" >Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html" >Events</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="about.html" >About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" >Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    
+    <!-- Page Title -->
+    <div class="container my-5">
+        <h1 class="text-center mb-3">كل الفعاليات</h1>
+        <p class="text-center text-muted"><strong> جميع فعاليات الجامعة الافتراضية السورية </strong></p>
+    </div>
+
+    <!-- Search and filter bar -->
+    <div class="container my-4">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="🔍 ابحث عن فعالية...">
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option>كل التصنيفات</option>
+                    <option>ثقافة</option>
+                    <option>رياضة</option>
+                    <option>موسيقى</option>
+                    <option>عائلي</option>
+                    <option>احداث خاصة</option>
+                    <option>تقنية</option>
+                    <option>تعليمي</option>
+                    <option>وظائف</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option>الاقدم اولاً</option>
+                    <option>الاحدث اولاً</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row g-4">
+            
+            <!-- Event Card 1 -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="culture">
+                <div class="card h-100">
+                    <img src="assets/img/معرض الكتاب الجامعي.jpg" class="card-img-top" alt="Culture Event">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge bg-success mb-2">ثقافة</span>
+                        <h5 class="card-title">معرض الكتاب الجامعي</h5>
+                        <p class="card-text">استعراض أحدث الإصدارات الأدبية والعلمية من مختلف دور النشر.</p>
+                        <p class="card-text"><small class="text-muted">📅 15-20 أبريل 2026</small></p>
+                        <div class="text-start mt-auto">
+                           <a href="event-details.html?id=1" class="btn btn-primary">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="sports">
+                <div class="card h-100">
+                    <img src="assets/img/مارثون جامعي.jpg" class="card-img-top" alt="Sports Event">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge text-bg-danger mb-2">رياضة</span>
+                        <h5 class="card-title">ماراثون الجامعة السنوي</h5>
+                        <p class="card-text">شارك في الماراثون السنوي لجميع طلاب الجامعة.</p>
+                        <p class="card-text"><small class="text-muted">📅 22 أبريل 2026</small></p>
+                        <div class="text-start mt-auto">
+                          <a href="event-details.html?id=2" class="btn btn-primary">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="music">
+                <div class="card h-100">
+                    <img src="assets/img/حفلة موسقى جامعية.jpg" class="card-img-top" alt="Music Event">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge bg-warning mb-2">موسيقى</span>
+                        <h5 class="card-title">حفلة الموسيقى الكلاسيكية</h5>
+                        <p class="card-text">أمسية موسيقية مع أوركسترا الجامعة.</p>
+                        <p class="card-text"><small class="text-muted">📅 25 أبريل 2026</small></p>
+                        <div class="text-start mt-auto">
+                            <a href="event-details.html?id=3" class="btn btn-primary">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 4 -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="family">
+                <div class="card h-100">
+                    <img src="assets/img/زيارة العائلات للجامعة.jpg" class="card-img-top" alt="Family Event">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge bg-secondary mb-2">عائلي</span>
+                        <h5 class="card-title">يوم العائلة المفتوح</h5>
+                        <p class="card-text">فعاليات ترفيهية وتعليمية لجميع أفراد العائلة.</p>
+                        <p class="card-text"><small class="text-muted">📅 28 أبريل 2026</small></p>
+                        <div class="text-start mt-auto">
+                            <a href="event-details.html?id=4" class="btn btn-primary">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 5 -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="special">
+                <div class="card h-100">
+                    <img src="assets/img/حفل تخرج 2026.jpg" class="card-img-top" alt="special event">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge bg-info mb-2">حدث خاص</span>
+                        <h5 class="card-title">حفلة تخرج</h5>
+                        <p class="card-text">حفلة التخرج لطلاب الجامعة الافتراضية السورية</p>
+                        <p class="card-text"><small class="text-muted">📅 30 أبريل 2026</small></p>
+                        <div class="text-start mt-auto">
+                           <a href="event-details.html?id=5" class="btn btn-primary">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 6 -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="special">
+                <div class="card h-100">
+                    <img src="assets/img/ورشات العمل والتعلم مدى الحياة.jpg" class="card-img-top" alt="Workshops">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge bg-info mb-2">حدث خاص</span>
+                        <h5 class="card-title">ورشات العمل والتعلم مدى الحياة</h5>
+                        <p class="card-text">مركز التعلم مدى الحياة ورشات تدريبية دورية لتعزيز المهارات</p>
+                        <p class="card-text"><small class="text-muted">📅 2-5 مايو 2026</small></p>
+                        <div class="text-start mt-auto">
+                           <a href="event-details.html?id=6" class="btn btn-primary">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 7 -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="special">
+                <div class="card h-100">
+                    <img src="assets/img/صورة باستقبال الطلاب الجدد.jpg" class="card-img-top" alt="Welcome Students">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge bg-info mb-2">حدث خاص</span>
+                        <h5 class="card-title">فعاليات استقبال الطلاب الجدد</h5>
+                        <p class="card-text">فعاليات تساعد الطلاب الجدد على التعرف على الجامعة، تتضمن أنشطة تعارف وكسر الجليد.</p>
+                        <p class="card-text"><small class="text-muted">📅 10-12 سبتمبر 2026</small></p>
+                        <div class="text-start mt-auto">
+                            <a href="event-details.html?id=7" class="btn btn-primary">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 8  -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="special">
+                <div class="card h-100">
+                    <img src="assets/img/صورة مقابلات وتوظيف.jpg" class="card-img-top" alt="Job Fair">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge bg-primary mb-2">وظائف</span>
+                        <h5 class="card-title">معرض التوظيف الافتراضي</h5>
+                        <p class="card-text">تشارك الشركات لتقديم فرص عمل. يمكن للطلاب التحدث مع أصحاب العمل والتقديم مباشرة.</p>
+                        <p class="card-text"><small class="text-muted">📅 15-17 مايو 2026</small></p>
+                        <div class="text-start mt-auto">
+                            <a href="event-details.html?id=8" class="btn btn-primary">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 9  -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="special">
+                <div class="card h-100">
+                    <img src="assets/img/ممسابقات برمجية.jpg" class="card-img-top" alt="Hackathon">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge tech-badge mb-2">تقنية</span>
+                        <h5 class="card-title">الهاكاثون والمسابقات</h5>
+                        <p class="card-text">منافسات لبناء مشاريع أو حل مشكلات تقنية. شائعة جداً في تخصصات البرمجة.</p>
+                        <p class="card-text"><small class="text-muted">📅 5-7 يونيو 2026</small></p>
+                        <div class="text-start mt-auto">
+                            <a href="event-details.html?id=9" class="btn btn-primary">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Event Card 10  -->
+            <div class="col-md-6 col-lg-4 event-card" data-category="culture">
+                <div class="card h-100">
+                    <img src="assets/img/مؤتمر علمي.jpg" class="card-img-top" alt="Conference">
+                    <div class="card-body d-flex flex-column text-end">
+                        <span class="badge bg-dark mb-2">تعليمي</span>
+                        <h5 class="card-title">المؤتمر العلمي الافتراضي</h5>
+                        <p class="card-text">مؤتمر علمي يشمل محاضرين، جلسات نقاش، وأسئلة وأجوبة لنشر المعرفة والبحث العلمي.</p>
+                        <p class="card-text"><small class="text-muted">📅 20-22 يونيو 2026</small></p>
+                        <div class="text-start mt-auto">
+                            <a href="event-details.html?id=10" class="btn btn-primary">تفاصيل</a>
+
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <!-- coming new events in the future -->
+                <div class="col-md-6 col-lg-4 event-card">
+                    <div class="card h-100">
+                        <div class="text-center mt-4">
+                            <img src="assets/img/syrianvirtualuniversity_logo.jpg" width="80" alt="SVU logo">
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">ترقبو المزيد من الفعاليات القادمة</h5>
+                            <p class="card-text text-muted">سيتم الإعلان عن فعاليات جديدة قريباً</p>
+                            <div class="text-start mt-auto">
+                                <button class="btn btn-outline-secondary w-100" disabled>قريباً</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+</main>
+
+<!-- Team names and IDs -->
+<div class="container my-5">
+    <div class="alert alert-secondary text-center">
+        <h4 class="alert-heading">أعضاء الفريق</h4>
+        <hr>
+        <p class="mb-0"><strong>الاسم:</strong> abdulrahman | <strong>ID:</strong> 239009</p>
+        <p><strong>الاسم:</strong> ahmed | <strong>ID:</strong> 207887</p>
+        <p><strong>الاسم:</strong> evan | <strong>ID:</strong> 295039</p>
+        <p><strong>الاسم:</strong> aya | <strong>ID:</strong> 324688</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="myfooter text-white p-3">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <!-- left side copyright claim -->
+            <div>
+                <p class="mb-0">Copyright © 2011-2012, SVU All rights reserved. <a class="me-1" href="https://svuonline.org/" target="_blank">SVU</a></p>
+            </div>
+            
+            <!-- right side social media -->
+            <div class="social-image">
+                <a href="https://www.facebook.com/svuonline.org" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/SVU_Syria" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/X.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/syrian_virtual_university" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/instagram.jpg" alt="Instagram">
+                </a>
+                <a href="https://sy.linkedin.com/school/syrianvirtualuniversity/" class="text-white me-2" target="_blank">
+                    <img class="social-icons" src="assets/img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/channel/UCJwPgp0tOp1ZqkzbmDvFSaw" class="text-white" target="_blank">
+                    <img class="social-icons" src="assets/img/youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
